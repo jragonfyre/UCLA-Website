@@ -32,7 +32,9 @@ sass:
   load_paths:
     - _sass
     - node_modules
-exclude: []
+exclude: [
+  current-site
+]
 
 #twitter_username: jekyllrb
 #github_username:  jekyll
