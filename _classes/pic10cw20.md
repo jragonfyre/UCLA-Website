@@ -13,8 +13,9 @@ schedule:
 office_hours: 
   tentative: true
   times:
-    - Tuesday 11am-12pm
-    - Thursday 1-2pm
+    #- Tuesday 11am-12pm
+    #- Thursday 1-2pm
+    - Thursday 10am-12pm
   location: PIC Lab
 ---
 

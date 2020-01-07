@@ -22,8 +22,8 @@ title: Your awesome title
 email: jasonsch@g.ucla.edu
 description: >- # this means to ignore newlines until "baseurl:"
   UCLA website for the mathematics graduate student Jason Schuchardt.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/~jasonsch" # the subpath of your site, e.g. /blog
+url: "https://math.ucla.edu" # the base hostname & protocol for your site, e.g. http://example.com
 current-quarter: F19
 collections:
   classes:

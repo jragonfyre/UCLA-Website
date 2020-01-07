@@ -12,8 +12,8 @@
         {% if item.children %}dropdown{% endif %}">
         <a class="nav-link
           {% if item.children %}dropdown-toggle{% endif %}
-          " href="{{ item.link }}" {% if item.children %} id="{{item.name | downcase}}Dropdown" role="button"
-          data-toggle="dropdown" {% endif %}>
+          " href="{{ item.link | relative_url }}" {% if item.children %} id="{{item.name | downcase}}Dropdown"
+          role="button" data-toggle="dropdown" {% endif %}>
           {{ item.name }}
           {% if page.url == item.link %}
           <span class="sr-only">(current)</span>
@@ -22,7 +22,7 @@
         {% if item.children %}
         <div class="dropdown-menu" aria-labelledby="{{ item.name | downcase }}Dropdown">
           {% for child in item.children %}
-          <a class="dropdown-item" href="{{ child.link }}">
+          <a class="dropdown-item" href="{{ child.link | relative_url }}">
             {{ child.name }}
           </a>
           {% endfor %}
@@ -51,7 +51,7 @@
           {% assign tempid = "/classes/" | append: classNav.name %}
           {% assign class = site.classes | where: 'id', tempid | first %}
           {% if class %}
-          <a class="dropdown-item" href="/classes/{{classNav.name}}.html">
+          <a class="dropdown-item" href="{{classNav.name | prepend: "/classes/" | append: ".html" | relative_url}}">
             {{ class.title }}
           </a>
           {% else %}
