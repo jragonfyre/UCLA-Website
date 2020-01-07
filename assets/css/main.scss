@@ -1,0 +1,72 @@
+--- 
+---
+
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+
+//custom
+.content {
+    font-size: $custom-font-size;
+}
+.aboutme dt,
+.location {
+    font-weight: bold;
+}
+
+body {
+    --text-bg-color: #eee;
+    --light-grey-blue: #d2def7;
+    --dark-grey-blue: #273554;
+    --bright-blue: #5c8fff;
+    --gold-highlight: #f5ca5d;
+    --default-text: #111;
+    background: var(--light-grey-blue);
+    color: var(--default-text);
+}
+
+div.round-box, div.text-container {
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+}
+
+div.text-container {
+    background: var(--text-bg-color);
+}
+
+div.dark-bg {
+    background: var(--dark-grey-blue);
+    color: var(--light-grey-blue);
+}
+
+.dark-bg h1 {
+    color: var(--gold-highlight);
+    margin: 0px;
+}
+.dark-bg p, .dark-bg span {
+    color: var(--light-grey-blue);
+    margin: 5px 0px 0px 0px;
+}
+.dark-bg a:link {
+    color: #adb9f2;
+}
+.dark-bg a:visited {
+    color: #cd99b2;
+}
+
+a:link {
+    color: #2020a0;
+}
+
+a:visited {
+    color: #6020a0;
+}
+
+div h1 {
+    margin: 0px;
+}
+
+.dark-override.bg-dark {
+    background: var(--dark-grey-blue)!important;
+}
+

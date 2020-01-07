@@ -1,0 +1,85 @@
+---
+layout: master
+---
+{% assign c_info = site.data.class_info | where: 'name', page.class_name | first %}
+{% if c_info %}
+<!--{{ c_info | jsonify }}
+-->
+{% else %}
+<!-- {{ site.data.class_info | jsonify }}
+-->
+{% endif %}
+{% assign prof = site.data.professors | where: 'short_name', page.professor | first %}
+{% if prof %}
+<!--{{ prof | jsonify }}
+-->
+{% else %}
+<!-- {{ site.data.professors | jsonify }}
+-->
+{% endif %}
+
+<h2>
+  <a href="{{c_info.official_listing_url}}">
+    {{ c_info.name }}:
+    {{ c_info.long_name }}
+  </a>
+  - {{ page.when_long }}
+</h2>
+
+<div>
+  <b>Professor:</b> <a href="{{prof.home_page}}">{{ prof.name }}</a>
+  <ul>
+    <li>
+      Office: {{ prof.office }}
+    </li>
+  </ul>
+</div>
+<div>
+  <b>Teaching Assistant:</b>
+  {% if c_info.discussion %}
+  (for Discussion {{c_info.discussion}})
+  {% endif %}
+  <a href="/">Me</a>
+</div>
+
+{% if page.schedule %}
+<div>
+  <b>Schedule:</b>
+  <ul>
+    <li>
+      Class: {{ page.schedule.class }}
+    </li>
+    <li>
+      Discussion: {{ page.schedule.discussion }}
+    </li>
+  </ul>
+</div>
+{% endif %}
+
+{% if page.office_hours %}
+<div>
+  <b>My Office Hours</b> {% if page.office_hours.tentative %}(tentative){% endif %}
+  <ul>
+    <li>
+      Location: {{page.office_hours.location}}
+    </li>
+    {% if page.office_hours.time %}
+    <li>
+      {{ page.office_hours.time }}
+    </li>
+    {% elsif page.office_hours.times %}
+    {% for time in page.office_hours.times %}
+    <li>
+      {{ time }}
+    </li>
+    {% endfor %}
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+
+<p>
+  {{ c_info.description }}
+</p>
+
+{{ content }}

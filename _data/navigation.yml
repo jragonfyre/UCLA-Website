@@ -1,0 +1,11 @@
+- name: Home
+  link: /
+- name: Research
+  link: /research.html
+#- name: About Me
+#  link: /about.html
+#- name: Teaching
+#  link: \#
+#  children:
+#    - name: PIC 10C F19
+#      link: /teaching/pic10cf19.html

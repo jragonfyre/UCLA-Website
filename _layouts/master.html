@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+</html lang="en">
+
+<head>
+  <title> Jason Schuchardt - {{ page.title }}</title>
+  <!--
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Jason Schuchardt">
+  <link rel="stylesheet" href="{{'/assets/css/main.css'}}">
+
+</head>
+
+<body>
+
+  {% include navigation.html %}
+  {% if page.banner %}
+  <div class="container-fluid p-0">
+    {% endif %}
+    <!--<img class="img-fluid" src="{{page.banner}}" alt="{{page.banner_alt}}">
+    -->
+    <div class="container">
+      {{ content }}
+    </div>
+    {% if page.banner %}
+  </div>
+  {% endif %}
+
+  <!--
+    <div class="round-box dark-bg">
+      <h1>Jason Schuchardt</h1>
+      <p> PhD Student at the
+        <a href="https://www.ucla.edu/">UCLA</a>
+        <a href="https://www.math.ucla.edu/">Mathematics Department
+        </a>
+    </div>
+  -->
+
+  <script src="{{ '/assets/vendor/jquery.min.js' }}"></script>
+  <script src="{{ '/assets/vendor/popper.min.js' }}"></script>
+  <script src="{{ '/assets/vendor/bootstrap.min.js' }}"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
