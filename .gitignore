@@ -3,6 +3,4 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-!current-site
-!current-site/vendor
 node_modules
