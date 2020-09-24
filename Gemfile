@@ -18,6 +18,9 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 
+gem 'sskatex', '~> 0.9.39'
+gem "kramdown-math-sskatex", "1.0.1", git: "https://github.com/kramdown/math-sskatex"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do

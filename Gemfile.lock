@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/kramdown/math-sskatex
+  revision: 2b99d83f2f944fe7645926f2e784eccedadc9655
+  specs:
+    kramdown-math-sskatex (1.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,6 +15,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    execjs (2.7.0)
     ffi (1.11.3)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -59,6 +66,8 @@ GEM
     safe_yaml (1.0.5)
     sassc (2.2.1)
       ffi (~> 1.9)
+    sskatex (0.9.39)
+      execjs (~> 2.7)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
@@ -75,7 +84,9 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.0.0)
   jekyll-feed (~> 0.12)
+  kramdown-math-sskatex (= 1.0.1)!
   minima (~> 2.5)
+  sskatex (~> 0.9.39)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

@@ -1,0 +1,11 @@
+- title: Triangulations of simplices with vanishing local h-polynomial
+  other_authors: André Moura, Elijah Gunther, Sam Payne, and Alan Stapledon
+  arxiv_url: https://arxiv.org/abs/1909.10843
+  accepted: true
+  publisher: Algebraic Combinatorics
+  published: false
+  publisher_url: N/A
+  description: | # in markdown
+    From an undergraduate summer research project. 
+    We studied triangulations of simplices for which Richard Stanley's local $$h$$-polynomial 
+    vanishes, and gave a recursive enumeration of all such subdivisions of the 3-simplex, $$\Delta^3.$$

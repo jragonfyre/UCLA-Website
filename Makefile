@@ -20,7 +20,7 @@ check:
 install: $(PROJECT_DEPS)
 	$(NPM) install
 
-update: $(PROJECT_DEPTS)
+update: $(PROJECT_DEPS)
 	$(NPM) update 
 
 include-npm-deps:
@@ -30,6 +30,9 @@ include-npm-deps:
 	cp node_modules/popper.js/dist/umd/popper.min.js.map $(VENDOR_DIR)
 	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR)
 	cp node_modules/bootstrap/dist/js/bootstrap.min.js.map $(VENDOR_DIR)
+	cp node_modules/katex/dist/katex.min.js $(VENDOR_DIR)
+	cp node_modules/katex/dist/katex.min.css $(VENDOR_DIR)
+	cp -r node_modules/katex/dist/fonts $(VENDOR_DIR)
 
 build: include-npm-deps
 	$(JEKYLL) build

@@ -15,8 +15,15 @@ office_hours:
   location: Zoom
 ---
 
-<!--
-<h1>
-{{ page.class_name }}, {{ page.when_long }}
-</h1>
--->
+{::comment}
+# This is a header
+
+$$x^2$$ is a cool thingy
+
+- test1
+- test2
+
+1. cows
+2. big cows
+3. far away cows
+{:/comment}

@@ -32,6 +32,12 @@ sass:
   load_paths:
     - _sass
     - node_modules
+markdown: kramdown
+kramdown:
+#  math_engine: mathjax
+  math_engine: sskatex
+  math_engine_opts:
+    katex_js: assets/vendor/katex.min.js
 exclude: [
   current-site
 ]
