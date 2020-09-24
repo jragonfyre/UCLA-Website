@@ -26,14 +26,18 @@ layout: master
   - {{ page.when_long }}
 </h2>
 
+{% if prof %}
 <div>
   <b>Professor:</b> <a href="{{prof.home_page}}">{{ prof.name }}</a>
+  {% if prof.office %}
   <ul>
     <li>
       Office: {{ prof.office }}
     </li>
   </ul>
+  {% endif %}
 </div>
+{% endif %}
 <div>
   <b>Teaching Assistant:</b>
   {% if c_info.discussion %}

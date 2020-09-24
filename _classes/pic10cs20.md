@@ -1,23 +1,18 @@
 ---
 layout: class
-#id: pic10cf19
 title: PIC 10C S20
 class_name: PIC 10C
 when: S20
 when_long: Spring 2020
-professor: 
+professor: ricardo
 schedule:
   class: To update
   discussion: To update
 office_hours: 
   times:
-    - ?
-    - ?
+    - To update
+    - To update
   location: Zoom
 ---
 
-<!--
-<h1>
-{{ page.class_name }}, {{ page.when_long }}
-</h1>
--->
+Professor Salazar's PIC 10C class [website](https://www.pic.ucla.edu/~rsalazar/pic10c/).

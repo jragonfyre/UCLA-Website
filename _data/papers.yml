@@ -1,7 +1,10 @@
 - title: Triangulations of simplices with vanishing local h-polynomial
-  other_authors: André Moura, Elijah Gunther, Sam Payne, and Alan Stapledon
+  id: local_h_polynomials
+  other_authors: André de Moura, Elijah Gunther, Sam Payne, and Alan Stapledon
   arxiv_url: https://arxiv.org/abs/1909.10843
+  pdf_path: /pdfs/de Moura, Gunther, Payne, Schuchardt, Stapledon - Triangulations of simplices with vanishing local h-polynomial.pdf
   accepted: true
+  year: 2020
   publisher: Algebraic Combinatorics
   published: false
   publisher_url: N/A

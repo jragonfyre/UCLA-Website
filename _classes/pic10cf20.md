@@ -4,9 +4,9 @@ title: PIC 10C F20
 class_name: PIC 10C
 when: F20
 when_long: Fall 2020
-professor: 
+professor: mike_lindstrom
 schedule:
-  class: 
+  class: MWF 11-11:50am
   discussion: TR 11-11:50am (Pacific)
 office_hours: 
   times:
@@ -15,8 +15,4 @@ office_hours:
   location: Zoom
 ---
 
-<!--
-<h1>
-{{ page.class_name }}, {{ page.when_long }}
-</h1>
--->
+

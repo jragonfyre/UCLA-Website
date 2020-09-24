@@ -34,6 +34,10 @@ div.round-box, div.text-container {
     margin: 10px;
 }
 
+div > *:last-child {
+    margin-bottom: 0px;
+}
+
 div.paper-div {
     font-size: $smaller-font-size;
 }

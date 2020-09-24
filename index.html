@@ -8,6 +8,10 @@ banner: /assets/images/tokyo-tower-night-3.jpg
 banner_alt: Tokyo at night.
 ---
 
+{% capture aboutme_include %}{% include aboutme.md %}{% endcapture %}
+{{ aboutme_include | markdownify }}
+
+<!---
 <div class="text-container container bg-light">
   <table style="border-width: 1.5em">
     <col width="20%">
@@ -24,9 +28,21 @@ banner_alt: Tokyo at night.
         <span class="my_email">For security reasons, you must enable Javascript to view email</span>
   </table>
 </div>
+-->
 
 <!--<hr>-->
 
+<h2 id="teaching"> Teaching </h2>
+
+{% capture teaching_include %}{% include teaching_summary.md %}{% endcapture %}
+{{ teaching_include | markdownify }}
+
+<h2 id="research"><a href="{{ 'research.html' | relative_url }}"> Research </a></h2>
+
+{% capture research_include %}{% include research_summary.md %}{% endcapture %}
+{{ research_include | markdownify }}
+
+<!--
 <dl class=aboutme>
 
   <dt>Teaching
@@ -49,7 +65,7 @@ banner_alt: Tokyo at night.
       <li>Number Theory</li>
     </ul>
 
-    <!--<dt>Recent Papers
+  <dt>Recent Papers
 <dd><ul>
     <li>Your Name, Second Author, Title of Paper, BigJournal 40 (2004), 137-146.
 	(<a href="pub/paper1.pdf">PDF file</a>)
@@ -64,8 +80,8 @@ banner_alt: Tokyo at night.
       <!--<li><a href="CV.pdf">My Curriculum Vitae</a>->
       <!--<li><a href="research.pdf">My Research Statement</a>->
     </ul>
--->
-</dl>
 
+</dl>
+-->
 
 <!--Test: \(\int_{c\in\mathcal{C}} \mathbf{Set}(Fc,Gc) \simeq [\mathcal{C},\mathbf{Set}](F,G)\)-->
