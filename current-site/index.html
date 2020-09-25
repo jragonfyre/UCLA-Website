@@ -12,7 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Jason Schuchardt">
   <link rel="stylesheet" href="/~jasonsch/assets/css/main.css">
-
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <!---->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+  <!---->
+  
 </head>
 
 <body>
@@ -163,7 +171,22 @@
     <!--<img class="img-fluid" src="/assets/images/tokyo-tower-night-3.jpg" alt="Tokyo at night.">
     -->
     <div class="container">
-      <div class="text-container container bg-light">
+      
+<h2 id="about-me">About Me</h2>
+
+<div class="text-container container bg-light">
+
+  <p><strong>Office:</strong> MS 2350<br />
+<strong class="location">Office Hours:</strong> TBD<br />
+<strong class="location">E-Mail:</strong> <span class="my_email">For security reasons, you must enable Javascript to view email</span></p>
+
+  <p>I am a second year graduate student interested in homotopy theory.</p>
+
+</div>
+
+
+<!---
+<div class="text-container container bg-light">
   <table style="border-width: 1.5em">
     <col width="20%">
     <col width="80%">
@@ -177,14 +200,54 @@
       <td class=location>E-Mail
       <td>
         <span class="my_email">For security reasons, you must enable Javascript to view email</span>
-    <tr>
-      <td class=location>Phone
-      <td> N/A
   </table>
 </div>
+-->
 
 <!--<hr>-->
 
+<h2 id="teaching"> Teaching </h2>
+
+
+
+<div class="text-container container bg-light">
+
+  <ul>
+    <li>Fall 2020: <a href="/~jasonsch/classes/pic10cf20.html">Pic 10C</a> and 
+<a href="/~jasonsch/classes/math225af20.html">Math 225A</a></li>
+    <li>Spring 2020: <a href="/~jasonsch/classes/pic10cs20.html">PIC 10C</a></li>
+    <li>Winter 2020: <a href="/~jasonsch/classes/pic10cw20.html">PIC 10C</a></li>
+    <li>Fall 2019: <a href="/~jasonsch/classes/pic10cf19.html">PIC 10C</a></li>
+  </ul>
+
+</div>
+
+
+<h2 id="research"><a href="/~jasonsch/research.html"> Research </a></h2>
+
+
+
+<div class="text-container container bg-light">
+
+  <h4 id="research-interests">Research Interests</h4>
+  <ul>
+    <li>Homotopy Theory</li>
+    <li>Algebraic Geometry</li>
+    <li>Number Theory</li>
+  </ul>
+
+  <h4 id="past-papers">Past Papers</h4>
+
+  <ul>
+    <li><a href="/~jasonsch/research.html#local_h_polynomials">Triangulations of simplices with vanishing local h-polynomial</a>
+<a href="https://arxiv.org/abs/1909.10843" target="_blank">[arxiv]</a>
+<a href="/~jasonsch/pdfs/de%20Moura,%20Gunther,%20Payne,%20Schuchardt,%20Stapledon%20-%20Triangulations%20of%20simplices%20with%20vanishing%20local%20h-polynomial.pdf" target="_blank">[pdf]</a></li>
+  </ul>
+
+</div>
+
+
+<!--
 <dl class=aboutme>
 
   <dt>Teaching
@@ -207,7 +270,7 @@
       <li>Number Theory</li>
     </ul>
 
-    <!--<dt>Recent Papers
+  <dt>Recent Papers
 <dd><ul>
     <li>Your Name, Second Author, Title of Paper, BigJournal 40 (2004), 137-146.
 	(<a href="pub/paper1.pdf">PDF file</a>)
@@ -222,9 +285,11 @@
       <!--<li><a href="CV.pdf">My Curriculum Vitae</a>->
       <!--<li><a href="research.pdf">My Research Statement</a>->
     </ul>
--->
 
 </dl>
+-->
+
+<!--Test: \(\int_{c\in\mathcal{C}} \mathbf{Set}(Fc,Gc) \simeq [\mathcal{C},\mathbf{Set}](F,G)\)-->
     </div>
     
   </div>
@@ -244,6 +309,21 @@
   <script src="/~jasonsch/assets/vendor/popper.min.js"></script>
   <script src="/~jasonsch/assets/vendor/bootstrap.min.js"></script>
   <script src="/~jasonsch/assets/js/main.js"></script>
+  <!-- Parse the MathJax intended Latex divs with Katex-->
+  <!----
+  <script type="text/javascript">
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex, {displayMode: false});
+    });
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    });
+  </script>
+  <!---->
 </body>
 
 </html>

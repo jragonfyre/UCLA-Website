@@ -3221,6 +3221,12 @@ body { --text-bg-color: #eee; --light-grey-blue: #d2def7; --light-beige-gold: #f
 
 div.round-box, div.text-container { border-radius: 25px; padding: 20px; margin: 10px; }
 
+div > *:last-child { margin-bottom: 0px; }
+
+div.paper-div { font-size: 14px; }
+
+span.paper-title { font-size: 18px; font-weight: bold; }
+
 div.text-container { background: var(--text-bg-color); }
 
 div.dark-bg { background: var(--dark-grey-blue); color: var(--light-grey-blue); }

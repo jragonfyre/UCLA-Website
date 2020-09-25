@@ -5,7 +5,7 @@ JEKYLL := bundle exec jekyll
 
 PROJECT_DEPS := package.json 
 
-.PHONY: all clean install update
+.PHONY: all clean install update copy-to-current
 
 all: serve
 
@@ -39,4 +39,10 @@ build: include-npm-deps
 
 serve: include-npm-deps
 	JEKYLL_ENV=production $(JEKYLL) serve
+
+	
+copy-to-current: build 
+	rm -rf current-site/*
+	cp -r _site/* current-site 
+
 

@@ -12,7 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Jason Schuchardt">
   <link rel="stylesheet" href="/~jasonsch/assets/css/main.css">
-
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <!---->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+  <!---->
+  
 </head>
 
 <body>
@@ -161,7 +169,28 @@
     <!--<img class="img-fluid" src="" alt="">
     -->
     <div class="container">
-      
+      <h1 id="research">Research</h1>
+
+<div class="text-container container bg-light">
+
+  <p>My current research interests are homotopy theory, algebraic geometry, and number theory.</p>
+</div>
+
+<h1 id="papers-and-preprints">Papers and Preprints</h1>
+
+<div class="paper-div text-container">
+  <p><span class="paper-title" id="local_h_polynomials"> Triangulations of simplices with vanishing local h-polynomial </span></p>
+
+  <p><a href="https://arxiv.org/abs/1909.10843" target="_blank">[arxiv]</a>
+<a href="/~jasonsch/pdfs/de%20Moura,%20Gunther,%20Payne,%20Schuchardt,%20Stapledon%20-%20Triangulations%20of%20simplices%20with%20vanishing%20local%20h-polynomial.pdf" target="_blank">[pdf]</a></p>
+
+  <p>With André de Moura, Elijah Gunther, Sam Payne, and Alan Stapledon. 
+Accepted for publication in Algebraic Combinatorics. 
+From an undergraduate summer research project. 
+We studied triangulations of simplices for which Richard Stanley’s local <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">h</span></span></span></span>-polynomial 
+vanishes, and gave a recursive enumeration of all such subdivisions of the 3-simplex, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">&#x394;</mi><mn>3</mn></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\Delta^3.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">&#x394;</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></p>
+</div>
+
 
     </div>
     
@@ -180,6 +209,21 @@
   <script src="/~jasonsch/assets/vendor/popper.min.js"></script>
   <script src="/~jasonsch/assets/vendor/bootstrap.min.js"></script>
   <script src="/~jasonsch/assets/js/main.js"></script>
+  <!-- Parse the MathJax intended Latex divs with Katex-->
+  <!----
+  <script type="text/javascript">
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex, {displayMode: false});
+    });
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    });
+  </script>
+  <!---->
 </body>
 
 </html>

@@ -12,7 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Jason Schuchardt">
   <link rel="stylesheet" href="/~jasonsch/assets/css/main.css">
-
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <!---->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+  <!---->
+  
 </head>
 
 <body>
@@ -161,35 +169,25 @@
     <div class="container">
       
 
-<!--{"name":"PIC 10C","long_name":"Advanced Programming","official_listing_url":"https://www.math.ucla.edu/ugrad/courses/pic/10C","description":"The third part in the PIC 10 series of classes, PIC 10C covers more advanced topics like memory management, and the Qt graphics library.\n"}
--->
-
-
-
-<!-- [{"short_name":"claudia","name":"Claudia Falcon","home_page":"https://www.math.ucla.edu/~cfalcon/","office":"Math Sciences 7360"},{"short_name":"honda","name":"Ko Honda","home_page":"https://www.math.ucla.edu/~honda/","office":"Math Sciences 7901"}]
--->
-
 
 <h2>
-  <a href="https://www.math.ucla.edu/ugrad/courses/pic/10C">
+  <a href="https://www.math.ucla.edu/ugrad/courses/pic/10C" target="_blank">
     PIC 10C:
     Advanced Programming
   </a>
   - Spring 2020
 </h2>
 
+
 <div>
-  <b>Professor:</b> <a href=""></a>
-  <ul>
-    <li>
-      Office: 
-    </li>
-  </ul>
+  <b>Professor:</b> <a href="https://www.math.ucla.edu/~rsalazar/" target="_blank">Ricardo Salazar</a>
+  
 </div>
+
 <div>
   <b>Teaching Assistant:</b>
   
-  <a href="/">Me</a>
+  <a href="/~jasonsch/index.html">Me</a>
 </div>
 
 
@@ -216,11 +214,11 @@
     
     
     <li>
-      {}
+      To update
     </li>
     
     <li>
-      {}
+      To update
     </li>
     
     
@@ -229,15 +227,14 @@
 
 
 <p>
-  The third part in the PIC 10 series of classes, PIC 10C covers more advanced topics like memory management, and the Qt graphics library.
+  <p>The third part in the PIC 10
+series of classes, PIC 10C covers more
+advanced C++ topics like memory management,
+and the Qt graphics library.</p>
 
 </p>
 
-<!--
-<h1>
-PIC 10C, Spring 2020
-</h1>
--->
+<p>Professor Salazar’s PIC 10C class <a href="https://www.pic.ucla.edu/~rsalazar/pic10c/">website</a>.</p>
 
     </div>
     
@@ -256,6 +253,21 @@ PIC 10C, Spring 2020
   <script src="/~jasonsch/assets/vendor/popper.min.js"></script>
   <script src="/~jasonsch/assets/vendor/bootstrap.min.js"></script>
   <script src="/~jasonsch/assets/js/main.js"></script>
+  <!-- Parse the MathJax intended Latex divs with Katex-->
+  <!----
+  <script type="text/javascript">
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex, {displayMode: false});
+    });
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    });
+  </script>
+  <!---->
 </body>
 
 </html>
