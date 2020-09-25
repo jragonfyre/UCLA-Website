@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: UCLA Website
 email: jasonsch@g.ucla.edu
 description: >- # this means to ignore newlines until "baseurl:"
   UCLA website for the mathematics graduate student Jason Schuchardt.
@@ -27,6 +27,8 @@ url: "https://math.ucla.edu" # the base hostname & protocol for your site, e.g. 
 current-quarter: F19
 collections:
   classes:
+    output: true
+  post:
     output: true
 sass:
   load_paths:
@@ -38,6 +40,23 @@ kramdown:
   math_engine: sskatex
   math_engine_opts:
     katex_js: assets/vendor/katex.min.js
+    katex_opts: 
+      colorIsTextColor: true 
+      macros:
+        '\CC': '\mathbb{C}'
+        '\RR': '\mathbb{R}'
+        '\QQ': '\mathbb{Q}'
+        '\calC': '\mathcal{C}'
+        '\calD': '\mathcal{D}'
+        '\calE': '\mathcal{E}'
+        '\calV': '\mathcal{V}'
+        '\calW': '\mathcal{W}'
+        '\Set': '\mathbf{Set}'
+        '\sSet': '\mathbf{sSet}'
+        '\Vect': '\mathbf{Vect}'
+        '\Mod': '\mathbf{Mod}'
+        '\op': '{\text{op}}'
+        '\toby': '\xrightarrow'
 exclude: [
   current-site
 ]
