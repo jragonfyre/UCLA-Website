@@ -11,7 +11,6 @@ schedule:
 office_hours: 
   times:
     - TBD
-    - TBD
   location: Zoom
 ---
 

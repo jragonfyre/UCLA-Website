@@ -2,24 +2,10 @@
 layout: master
 ---
 {% assign c_info = site.data.class_info | where: 'name', page.class_name | first %}
-{% if c_info %}
-<!--{{ c_info | jsonify }}
--->
-{% else %}
-<!-- {{ site.data.class_info | jsonify }}
--->
-{% endif %}
 {% assign prof = site.data.professors | where: 'short_name', page.professor | first %}
-{% if prof %}
-<!--{{ prof | jsonify }}
--->
-{% else %}
-<!-- {{ site.data.professors | jsonify }}
--->
-{% endif %}
 
 <h2>
-  <a href="{{c_info.official_listing_url}}">
+  <a href="{{c_info.official_listing_url}}" target="_blank">
     {{ c_info.name }}:
     {{ c_info.long_name }}
   </a>
@@ -28,7 +14,7 @@ layout: master
 
 {% if prof %}
 <div>
-  <b>Professor:</b> <a href="{{prof.home_page}}">{{ prof.name }}</a>
+  <b>Professor:</b> <a href="{{prof.home_page}}" target="_blank">{{ prof.name }}</a>
   {% if prof.office %}
   <ul>
     <li>
@@ -43,7 +29,7 @@ layout: master
   {% if c_info.discussion %}
   (for Discussion {{c_info.discussion}})
   {% endif %}
-  <a href="/">Me</a>
+  <a href="{{ 'index.html' | relative_url }}">Me</a>
 </div>
 
 {% if page.schedule %}
@@ -83,7 +69,7 @@ layout: master
 {% endif %}
 
 <p>
-  {{ c_info.description }}
+  {{ c_info.description | markdownify }}
 </p>
 
 {{ content }}

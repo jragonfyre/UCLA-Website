@@ -1,14 +1,21 @@
 - name: PIC 10C
   long_name: Advanced Programming
   official_listing_url: https://www.math.ucla.edu/ugrad/courses/pic/10C
-  description: >
+  description: | # preserves newlines
     The third part in the PIC 10
     series of classes, PIC 10C covers more
-    advanced topics like memory management,
+    advanced C++ topics like memory management,
     and the Qt graphics library.
 - name: Math 225A
   long_name: Differential Topology
   official_listing_url: https://www.math.ucla.edu/grad/courses/math/225A
-  description: >
-    Description to be written.
-
+  description: | # preserves newlines
+    This is the first class in the graduate Geometry and Topology Qualifying Exam sequence. 
+    The class generally covers:
+    
+    - Differentiable manifolds and smooth maps
+    - Vector bundles, like the tangent and cotangent bundles
+    - Differential forms
+    - Integration of differential forms, including Stokes' theorem and de Rham cohomology
+    - Vector fields, distributions, and Frobenius' theorem.
+ 
