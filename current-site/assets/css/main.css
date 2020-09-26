@@ -3247,4 +3247,10 @@ div h1 { margin: 0px; }
 
 .dark-override.bg-dark { background: var(--dark-grey-blue) !important; }
 
+.math-header { background: var(--dark-grey-blue); color: #eee; border-radius: 7px; padding: 3px 7px 6px 7px; margin-right: 5px; }
+
+blockquote.math-quote { background: #ddd; border-radius: 10px; padding: 10px; line-height: 1.8; }
+
+blockquote.math-quote > *:last-child { margin-bottom: 0px; }
+
 /*# sourceMappingURL=main.css.map */
