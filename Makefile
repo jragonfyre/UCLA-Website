@@ -35,7 +35,7 @@ include-npm-deps:
 	cp -r node_modules/katex/dist/fonts $(VENDOR_DIR)
 
 build: include-npm-deps
-	$(JEKYLL) build
+	$(JEKYLL) build --incremental
 
 serve: include-npm-deps
 	JEKYLL_ENV=production $(JEKYLL) serve

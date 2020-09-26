@@ -20,11 +20,13 @@ body {
     --light-grey-blue: #d2def7;
     --light-beige-gold: #faf2d9;
     --lighter-beige-gold: #faf5e6;
+    --beige-gold: #ffe79e;
+    --medium-beige-gold: #ffecbf;
     --dark-grey-blue: #273554;
     --bright-blue: #5c8fff;
     --gold-highlight: #f5ca5d;
     --default-text: #111;
-    background: var(--light-beige-gold);
+    background: var(--medium-beige-gold);
     color: var(--default-text);
 }
 
