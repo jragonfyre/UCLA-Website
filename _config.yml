@@ -58,6 +58,8 @@ kramdown:
         '\Mod': '\mathbf{Mod}'
         '\op': '{\text{op}}'
         '\toby': '\xrightarrow'
+        '\uln' : '\underline'
+        '\oln' : '\overline'
 exclude: [
   current-site
 ]
