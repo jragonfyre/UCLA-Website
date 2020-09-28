@@ -18,7 +18,7 @@ date: 2020-09-26 17:54 -0700
 Let's recall the definition of a category enriched in a monoidal category $$\calV.$$
 
 {: .definition .math-quote }
-> **Definition 1**{: .math-header } 
+> **Definition 1:**{: .math-header } 
 > A category $$\uln{\calC}$$ enriched over $$\calV$$ (or a $$\calV$$-category for short)
 > consists of the data 
 > of 
@@ -37,7 +37,7 @@ Let's recall the definition of a category enriched in a monoidal category $$\cal
 It turns out that this is equivalent to specifying the following alternate data
 
 {: .definition .math-quote }
-> **Definition 2**{: .math-header } 
+> **Definition 2:**{: .math-header } 
 > A category $$\uln{\calC}$$ enriched over $$\calV$$ (or a $$\calV$$-category for short)
 > consists of the data 
 > of 
@@ -112,9 +112,9 @@ as the original composition in the case that $$A$$ came from an enriched categor
 As a result, we have the following conclusion:
 
 {: .proposition .math-quote }
-> **Definition/Proposition 3**{: .math-header } 
+> **Definition/Proposition 3:**{: .math-header } 
 > If $$\calC$$ is an ordinary category, $$\calV$$ is a monoidal category, then 
-> a *preenrichment* of $$\calC$$ over $$\calV$$ is the data of 
+> a *proenrichment* of $$\calC$$ over $$\calV$$ is the data of 
 > 
 > 1. A functor $$A:\calV^\op\times\calC^\op\times\calC\to \Set,$$
 > 2. a natural isomorphism $$\calC(-,-)\simeq A(1_\calV,-,-),$$
@@ -147,6 +147,11 @@ It occurs to me that we could probably do this entire construction for a
 monoidal category, which seems like it should give the definition of a 
 [promonoidal category](https://ncatlab.org/nlab/show/promonoidal+category),
 or any other adjunction plus structure set up.
+
+{:.note .math-quote }
+> **Note:**{:.math-header } Might come back and edit this to properly take into account 
+> the profunctor perspective on this.
+
 
 
 
