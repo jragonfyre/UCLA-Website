@@ -4,13 +4,15 @@ layout: master
 {% assign c_info = site.data.class_info | where: 'name', page.class_name | first %}
 {% assign prof = site.data.professors | where: 'short_name', page.professor | first %}
 
-<h2>
+<h2 class="mt-4 mb-3">
   <a href="{{c_info.official_listing_url}}" target="_blank">
     {{ c_info.name }}:
     {{ c_info.long_name }}
   </a>
   - {{ page.when_long }}
 </h2>
+
+<div class="container text-container bg-light">
 
 {% if prof %}
 <div>
@@ -73,3 +75,5 @@ layout: master
 </p>
 
 {{ content }}
+
+</div>
