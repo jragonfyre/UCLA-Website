@@ -14,7 +14,8 @@ summary: If $$G$$ is a simplicial group, then there is a complex of (not necessa
 date: 2020-09-28 11:33 -0700
 ---
 If $$G$$ is a simplicial group, then there is a complex of 
-(not necessarily) groups, $$NG$$, called the [Moore complex][1] with 
+(not necessarily abelian) groups, $$NG$$, 
+called the [Moore complex][1] with 
 $$NG_q = \bigcap_{i=1}^q \ker d_i.$$ The key result we'd like to understand 
 is the following. 
 
@@ -27,7 +28,7 @@ is the following.
 
 This result is Lemma 5 of Chapter II, Section 3 of Quillen's homotopical algebra,
 and the proof is said to be similar to the proof of (3.17) in Dold and Puppe's 
-*Homologie nicht-additiver Funktoren. Anwendungen*, however, since I can't read 
+*Homologie nicht-additiver Funktoren. Anwendungen*. However, since I can't read 
 German very well, nor find a proof on the internet, since most sources focus on 
 simplicial abelian groups, I thought I'd write up a proof using what I could make
 out of Dold and Puppe's argument.
@@ -114,7 +115,11 @@ so $$f_q$$ is surjective. $$\blacksquare$$
 Now we'd like to prove the fact. It suffices to show 
 the following precise statement, which is well known,
 and has proofs available elsewhere, like on the 
-$$n$$Lab [for instance][2], so I'll omit the proof.
+$$n$$Lab [for instance][2], so I'll omit the proof. 
+It's also fundamentally the same idea used to construct 
+a preimage of $$h$$ that lies in $$NG_q$$ in the proof
+that surjectivity of $$f$$ implies surjectivity of 
+$$Nf.$$
 
 {:.theorem .math-quote}
 > **Theorem (J.C. Moore, 1954)**{:.math-header} The simplicial set underlying any 
