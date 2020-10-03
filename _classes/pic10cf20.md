@@ -14,4 +14,5 @@ office_hours:
   location: Zoom
 ---
 
+Zoom links can be found on the CCLE in the [Discussion Links & Materials section](https://ccle.ucla.edu/course/view/20F-COMPTNG10C-1?section=5)
 

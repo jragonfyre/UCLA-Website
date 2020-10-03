@@ -9,8 +9,10 @@ schedule:
   class: MWF 2-2:50pm
   discussion: Thursday 2-2:50pm (Pacific)
 office_hours: 
+  tentative: true
   times:
-    - TBD
+    - Tuesday 6-7pm
+    - Thursday 3-4pm
   location: Zoom
 ---
 
@@ -25,4 +27,6 @@ The main references for this course as I understand them are the following:
    [using a VPN](https://www.it.ucla.edu/it-support-center/services/virtual-private-network-vpn-clients){: target="_blank"}.
 3. Professor Honda's course notes, which can be accessed from 
    [his website](https://www.math.ucla.edu/~honda/Math%20225A%20fall%202020%20syllabus.html){: target="_blank"}.
+
+Zoom links can be found on the CCLE in the [Discussion Links & Materials section](https://ccle.ucla.edu/course/view/20F-MATH225A-1?section=1)
 
