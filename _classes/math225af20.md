@@ -30,3 +30,6 @@ The main references for this course as I understand them are the following:
 
 Zoom links can be found on the CCLE in the [Discussion Links & Materials section](https://ccle.ucla.edu/course/view/20F-MATH225A-1?section=1)
 
+### Handouts
+
+* [Week 0]({{ 'pdfs/math-225a-f20/week0-notes.pdf' | relative_url }}){: target="_blank" }
