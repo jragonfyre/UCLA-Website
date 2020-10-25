@@ -11,7 +11,7 @@ schedule:
 office_hours: 
   tentative: true
   times:
-    - Tuesday 6-7pm
+    - Tuesday 4-5pm
     - Thursday 3-4pm
   location: Zoom
 ---
