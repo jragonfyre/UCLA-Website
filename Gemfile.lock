@@ -73,7 +73,7 @@ GEM
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
@@ -86,7 +86,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.0.0)
   jekyll-compose
-  jekyll-feed (~> 0.12)
   kramdown-math-sskatex (= 1.0.1)!
   minima (~> 2.5)
   sskatex (~> 0.9.39)
