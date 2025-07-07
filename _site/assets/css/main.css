@@ -2628,7 +2628,7 @@ span.paper-title { font-size: 18px; font-weight: bold; }
 
 div.text-container { background: var(--text-bg-color); }
 
-div.dark-bg { background: var(--dark-grey-blue); color: var(--light-grey-blue); }
+.dark-bg { background: var(--dark-grey-blue); color: var(--light-grey-blue); }
 
 .dark-bg h1, .dark-bg .h1 { color: var(--gold-highlight); margin: 0px; }
 
@@ -2637,6 +2637,12 @@ div.dark-bg { background: var(--dark-grey-blue); color: var(--light-grey-blue); 
 .dark-bg a:link { color: #adb9f2; }
 
 .dark-bg a:visited { color: #cd99b2; }
+
+a.nav-link:link { color: #fff; }
+
+a.nav-link:visited { color: #fff; }
+
+.nav-link.active { font-weight: bold; }
 
 a:link { color: #2020a0; }
 

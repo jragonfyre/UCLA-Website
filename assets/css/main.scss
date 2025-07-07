@@ -53,7 +53,7 @@ div.text-container {
     background: var(--text-bg-color);
 }
 
-div.dark-bg {
+.dark-bg {
     background: var(--dark-grey-blue);
     color: var(--light-grey-blue);
 }
@@ -71,6 +71,17 @@ div.dark-bg {
 }
 .dark-bg a:visited {
     color: #cd99b2;
+}
+
+a.nav-link:link {
+    color:#fff ;
+}
+a.nav-link:visited {
+    color: #fff;
+}
+
+.nav-link.active {
+    font-weight:bold;
 }
 
 a:link {

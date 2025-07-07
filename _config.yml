@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   UCLA website for the mathematics graduate student Jason Schuchardt.
 baseurl: "/~jasonsch" # the subpath of your site, e.g. /blog
 url: "https://math.ucla.edu" # the base hostname & protocol for your site, e.g. http://example.com
-current-quarter: F20
+current-quarter: S25
 incremental: true
 collections:
   classes:
@@ -60,9 +60,12 @@ kramdown:
         '\toby': '\xrightarrow'
         '\uln' : '\underline'
         '\oln' : '\overline'
-exclude: [
-  current-site
-]
+exclude: 
+  - current-site
+  - Makefile
+  - package.json
+  - package-lock.json
+
 
 #twitter_username: jekyllrb
 #github_username:  jekyll
