@@ -19,6 +19,10 @@ group :jekyll_plugins do
   gem 'jekyll-compose'
 end
 
+gem 'csv'
+gem 'logger'
+gem 'base64'
+gem 'bigdecimal'
 gem 'sskatex', '~> 0.9.39'
 gem "kramdown-math-sskatex", "1.0.1", git: "https://github.com/kramdown/math-sskatex"
 
@@ -32,3 +36,5 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
+
+gem "webrick", "~> 1.9"
