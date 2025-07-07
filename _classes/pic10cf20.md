@@ -10,7 +10,8 @@ schedule:
   discussion: TR 11-11:50am (Pacific)
 office_hours: 
   times:
-    - TBD
+    - Wednesday 2-3pm
+    - Friday 12-1pm
   location: Zoom
 ---
 
