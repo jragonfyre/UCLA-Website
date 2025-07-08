@@ -34,7 +34,7 @@ simplicial abelian groups, I thought I'd write up a proof using what I could mak
 out of Dold and Puppe's argument.
 
 The key fact necessary for the proof is the following. 
-If $$G$$ is a simplicial abelian group, $$g\in G_q$$, and
+If $$G$$ is a simplicial group, $$g\in G_q$$, and
 $$0\le i\le q$$ is an index, then we can write $$g$$ as a product of a $$q$$-simplex with
 only the $$i$$th face being nonzero, and degenerate simplices.
 
