@@ -11,7 +11,6 @@ schedule:
     class: MWF 12-12:50pm
     discussion: TR 12-12:50pm
 office_hours: 
-  tentative: true
   times:
     #- Tuesday 11am-12pm
     #- Thursday 1-2pm

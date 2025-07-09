@@ -1,10 +1,8 @@
-- text: Current classes
-- name: pic10cf20
-  current: true
-- name: math225af20
-  current: true
-- divider: true
+#- text: Current classes
+#- divider: true
 - text: Past classes
+- name: pic10cf20
+- name: math225af20
 - name: pic10cs20
 - name: pic10cw20
 - name: pic10cf19

@@ -62,10 +62,16 @@ div.text-container {
     color: var(--gold-highlight);
     margin: 0px;
 }
-.dark-bg p, .dark-bg span {
+.dark-bg p {
     color: var(--light-grey-blue);
     margin: 5px 0px 0px 0px;
 }
+
+.brand-span {
+    margin-left: 20px;
+}
+
+
 .dark-bg a:link {
     color: #adb9f2;
 }

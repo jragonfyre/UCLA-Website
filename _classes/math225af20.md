@@ -9,7 +9,6 @@ schedule:
   class: MWF 2-2:50pm
   discussion: Thursday 2-2:50pm (Pacific)
 office_hours: 
-  tentative: true
   times:
     - Tuesday 4-5pm
     - Thursday 3-4pm
