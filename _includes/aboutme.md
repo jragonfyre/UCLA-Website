@@ -13,7 +13,8 @@
 **Office Hours:**{:.location} TBD  
 **E-Mail:**{:.location} <span class="my_email">For security reasons, you must enable Javascript to view email</span>
 
-I am a sixth year graduate student interested in homotopy theory. My advisor is Mike Hill.
+I am a sixth year graduate student at UCLA. My advisor is Mike Hill. I am interested 
+in equivariant homotopy theory, particularly the algebra of Mackey/Green/Tambara functors.
 
 </div>
 </div>
