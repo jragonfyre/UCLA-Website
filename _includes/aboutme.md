@@ -9,8 +9,8 @@
 </div>
 
 <div class="col-9" markdown="1">
-**Office:** MS 2350  
-**Office Hours:**{:.location} TBD  
+<!-- **Office:** MS 2350   -->
+<!-- **Office Hours:**{:.location} TBD   -->
 **E-Mail:**{:.location} <span class="my_email">For security reasons, you must enable Javascript to view email</span>
 
 I am a sixth year graduate student at UCLA. My advisor is Mike Hill. I am interested 
