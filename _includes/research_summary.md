@@ -3,8 +3,9 @@
 
 #### Research Interests
 - Homotopy Theory
-- Algebraic Geometry
-- Number Theory
+- Equivariant Algebra (Green and Tambara functors)
+
+[Research Statement]({% link pdfs/schuchardt-research-statement.pdf %}){: target="_blank"}
 
 #### Past Papers
 {% for paper in site.data.papers %}

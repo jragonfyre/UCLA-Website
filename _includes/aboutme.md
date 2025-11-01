@@ -16,6 +16,8 @@
 I am a sixth year graduate student at UCLA. My advisor is Mike Hill. I am interested 
 in equivariant homotopy theory, particularly the algebra of Mackey/Green/Tambara functors.
 
+[Curriculum Vitae]({% link pdfs/schuchardt-cv.pdf %}){: target="_blank" }
+
 </div>
 </div>
 </div>

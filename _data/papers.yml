@@ -1,3 +1,14 @@
+- title: Algebraically Closed Fields in Equivariant Algebra
+  id: algebraically_closed_tambara_functors
+  other_authors: Ben Spitz and Noah Wisdom
+  arxiv_url: https://arxiv.org/abs/2505.05539
+  pdf_path: /pdfs/Schuchardt, Spitz, Wisdom - Algebraically Closed Fields in Equivariant Algebra.pdf
+  description: |
+    We show that the Nullstellensatzian (a generalization of algebraically closed) 
+    Tambara functors are precisely those coinduced from ordinary 
+    algebraically closed fields. In the process we also give conditions for functors to 
+    preserve Nullstellensatzian objects.
+
 - title: Triangulations of simplices with vanishing local h-polynomial
   id: local_h_polynomials
   other_authors: André de Moura, Elijah Gunther, Sam Payne, and Alan Stapledon
