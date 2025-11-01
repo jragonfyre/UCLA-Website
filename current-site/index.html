@@ -11,6 +11,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Jason Schuchardt">
+  <link rel="shortcut icon" type="image/x-icon" href="/~jasonsch/favicon.ico" />
   <link rel="stylesheet" href="/~jasonsch/assets/css/main.css">
   <!-- Load KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
@@ -25,8 +26,10 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark dark-override">
-  <a class="navbar-brand" href="#">Jason Schuchardt</a>
+  <nav class="navbar navbar-expand-sm navbar-dark dark-bg dark-override">
+    
+  <a class="navbar-brand nav-link" href="/~jasonsch/">
+    <span class="brand-span">Jason Schuchardt</span></a>
   <button aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
     data-target="#navContent" data-toggle="collapse" type="button">
     <span class="navbar-toggler-icon"></span>
@@ -35,48 +38,43 @@
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item
-        active
         ">
         <a class="nav-link
+          active
           
           " href="/~jasonsch/" >
           Home
-          
-          <span class="sr-only">(current)</span>
-          
         </a>
         
 
       </li>
       
       <li class="nav-item
-        
         ">
         <a class="nav-link
+          
           
           " href="/~jasonsch/research.html" >
           Research
-          
         </a>
         
 
       </li>
       
       <li class="nav-item
-        
         ">
         <a class="nav-link
           
+          
           " href="/~jasonsch/miscellaneous-math.html" >
           Misc. Math
-          
         </a>
         
 
       </li>
       
       <li class="nav-item dropdown">
-        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown"
           id="teachingDropdown" role="button">
           Teaching
         </a>
@@ -84,7 +82,7 @@
           
           
           <span class="dropdown-item disabled">
-            Current classes
+            Past classes
           </span>
           
           
@@ -111,21 +109,6 @@
           <a class="dropdown-item" href="/~jasonsch/classes/math225af20.html">
             Math 225A F20
           </a>
-          
-          
-          
-          
-          
-          <div class="dropdown-divider">
-          </div>
-          
-          
-          
-          
-          <span class="dropdown-item disabled">
-            Past classes
-          </span>
-          
           
           
           
@@ -181,20 +164,32 @@
   
   <div class="container-fluid p-0">
     
-    <!--<img class="img-fluid" src="/assets/images/tokyo-tower-night-3.jpg" alt="Tokyo at night.">
-    -->
+    <!--<img class="img-fluid" src="/~jasonsch/assets/images/tokyo-tower-night-3.jpg" alt="Tokyo at night.">-->
+    
     <div class="container">
       
 <h2 id="about-me">About Me</h2>
 
 <div class="text-container container bg-light">
 
-  <p><strong>Office:</strong> MS 2350<br />
-<strong class="location">Office Hours:</strong> TBD<br />
-<strong class="location">E-Mail:</strong> <span class="my_email">For security reasons, you must enable Javascript to view email</span></p>
+<div class="row">
+<div class="col-3">
 
-  <p>I am a second year graduate student interested in homotopy theory.</p>
+<img class="img-thumbnail portrait rounded mx-auto" src="/~jasonsch/assets/images/jason-portrait-300.png" alt="picture of Jason" />
+</div>
 
+<div class="col-9">
+      <!-- **Office:** MS 2350   -->
+      <!-- **Office Hours:**{:.location} TBD   -->
+      <p><strong class="location">E-Mail:</strong> <span class="my_email">For security reasons, you must enable Javascript to view email</span></p>
+
+      <p>I am a graduate student at UCLA with planned graduation in the fall of 2025. My advisor is Mike Hill. I am interested 
+in equivariant homotopy theory, particularly the algebra of Mackey/Green/Tambara functors.</p>
+
+      <p><a href="/~jasonsch/pdfs/schuchardt-cv.pdf" target="_blank">Curriculum Vitae</a></p>
+
+    </div>
+</div>
 </div>
 
 
@@ -225,13 +220,17 @@
 
 <div class="text-container container bg-light">
 
-  <ul>
-    <li>Fall 2020: <a href="/~jasonsch/classes/pic10cf20.html">Pic 10C</a> and 
-<a href="/~jasonsch/classes/math225af20.html">Math 225A</a></li>
-    <li>Spring 2020: <a href="/~jasonsch/classes/pic10cs20.html">PIC 10C</a></li>
-    <li>Winter 2020: <a href="/~jasonsch/classes/pic10cw20.html">PIC 10C</a></li>
-    <li>Fall 2019: <a href="/~jasonsch/classes/pic10cf19.html">PIC 10C</a></li>
-  </ul>
+  <p>When teaching moved online due to the coronavirus, I shifted to posting information
+about classes and my office hours on the official Canvas sites for the classes. For a list of 
+classes that I have taught, please see my CV.</p>
+
+  <p><a href="/~jasonsch/pdfs/schuchardt-teaching-statement.pdf" target="_blank">Teaching Statement</a></p>
+
+  <!-- - Fall 2020: [Pic 10C](/~jasonsch/classes/pic10cf20.html) and 
+  [Math 225A](/~jasonsch/classes/math225af20.html)
+- Spring 2020: [PIC 10C](/~jasonsch/classes/pic10cs20.html)
+- Winter 2020: [PIC 10C](/~jasonsch/classes/pic10cw20.html)
+- Fall 2019: [PIC 10C](/~jasonsch/classes/pic10cf19.html) -->
 
 </div>
 
@@ -245,16 +244,24 @@
   <h4 id="research-interests">Research Interests</h4>
   <ul>
     <li>Homotopy Theory</li>
-    <li>Algebraic Geometry</li>
-    <li>Number Theory</li>
+    <li>Equivariant Algebra (Green and Tambara functors)</li>
   </ul>
+
+  <p><a href="/~jasonsch/pdfs/schuchardt-research-statement.pdf" target="_blank">Research Statement</a></p>
 
   <h4 id="past-papers">Past Papers</h4>
 
   <ul>
-    <li><a href="/~jasonsch/research.html#local_h_polynomials">Triangulations of simplices with vanishing local h-polynomial</a>
+    <li>
+      <p><a href="/~jasonsch/research.html#algebraically_closed_tambara_functors">Algebraically Closed Fields in Equivariant Algebra</a>
+<a href="https://arxiv.org/abs/2505.05539" target="_blank">[arxiv]</a>
+<a href="/~jasonsch/pdfs/Schuchardt,%20Spitz,%20Wisdom%20-%20Algebraically%20Closed%20Fields%20in%20Equivariant%20Algebra.pdf" target="_blank">[pdf]</a></p>
+    </li>
+    <li>
+      <p><a href="/~jasonsch/research.html#local_h_polynomials">Triangulations of simplices with vanishing local h-polynomial</a>
 <a href="https://arxiv.org/abs/1909.10843" target="_blank">[arxiv]</a>
-<a href="/~jasonsch/pdfs/de%20Moura,%20Gunther,%20Payne,%20Schuchardt,%20Stapledon%20-%20Triangulations%20of%20simplices%20with%20vanishing%20local%20h-polynomial.pdf" target="_blank">[pdf]</a></li>
+<a href="/~jasonsch/pdfs/de%20Moura,%20Gunther,%20Payne,%20Schuchardt,%20Stapledon%20-%20Triangulations%20of%20simplices%20with%20vanishing%20local%20h-polynomial.pdf" target="_blank">[pdf]</a></p>
+    </li>
   </ul>
 
 </div>
@@ -319,8 +326,8 @@
   -->
 
   <script src="/~jasonsch/assets/vendor/jquery.min.js"></script>
-  <script src="/~jasonsch/assets/vendor/popper.min.js"></script>
-  <script src="/~jasonsch/assets/vendor/bootstrap.min.js"></script>
+  <!--<script src="/~jasonsch/assets/vendor/popper.min.js"></script>-->
+  <script src="/~jasonsch/assets/vendor/bootstrap.bundle.min.js"></script>
   <script src="/~jasonsch/assets/js/main.js"></script>
   <!-- Parse the MathJax intended Latex divs with Katex-->
   <!----
